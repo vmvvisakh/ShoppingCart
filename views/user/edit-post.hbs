@@ -1,0 +1,29 @@
+
+<div class="d-flex mt-5">
+<div class="admin-title ms-4">
+  <h2 class="text-center">View / Edit Post</h2>
+</div>
+
+<form class="mt-5 ms-4" action="/edit-post/{{data._id}}?_method=PUT" method="POST">
+
+  <label for="title"><b>Name</b></label>
+  <input type="text" placeholder="Post Title" name="name" value="{{data.name}}">
+
+<label for="title"><b>Category</b></label>
+  <input type="text" placeholder="Post Title" name="category" value="{{data.category}}">
+
+  <label for="title"><b>Price</b></label>
+  <input type="text" placeholder="Post Title" name="price" value="{{data.price}}">
+
+  <label for="title"><b>Description</b></label>
+  <input type="text" placeholder="Post Title" name="description" value="{{data.description}}">
+
+  <button type="submit" value="Update" class="btn btn-success"> Update</button>
+
+</form>
+
+<form class="mt-5 ms-4" action="/delete-post/{{data._id}}?_method=DELETE" method="POST">
+    <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+  </form>
+
+  </div>

@@ -1,0 +1,31 @@
+
+    <section class="container">
+
+        <div class="row mt-5">
+            {{!-- {{#each products}} --}}
+            {{#each products}}
+            <div class="col-md-3 mb-3">
+                <div class="card" >
+                    {{!-- <img src="/product-images/{{this._id}}.jpg"
+                        class="card-img-top" alt="..."> --}}
+                    <div class="card-body">
+                       <a href="/product/{{_id}}">
+                       <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        </a> 
+                        <a href="/edit-post/{{_id}}">Edit</a> <br>
+                       <form class="mt-5 ms-4" action="/delete-post/{{_id}}?_method=DELETE" method="POST">
+    <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+  </form>
+                        {{!-- <a href="#" class="btn btn-primary">Add To Cart</a> --}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            {{!-- {{/each}} --}}
+
+          <h1>{{user.username}}</h1>  
+           
+        </div>
+    </section>
+   

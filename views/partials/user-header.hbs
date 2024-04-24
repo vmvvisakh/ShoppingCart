@@ -1,0 +1,53 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Shopping cart </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                         <div class="header__button mt-2 ms-4">
+    <a href="/logout">
+      Logout
+    </a>
+  </div>
+                </ul>
+                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {{!-- {{#if user}}
+    {{user.Name}}
+    {{else}}
+    Account
+    {{/if}} --}}
+   
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/login">Login</a></li>
+    
+     {{!-- {{#if user}}
+   <li><a class="dropdown-item" href="/logout">Logout</a></li>
+    {{else}}
+       <li><a class="dropdown-item" href="/login">Login</a></li>
+
+    {{/if}}
+     --}}
+   
+  </ul>
+</div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+</header>
